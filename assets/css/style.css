@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Teko:wght@300..700&display=swap");
+.primary-font {
+  font-family: "Teko", sans-serif;
+}
+
+.color-white {
+  color: #fff;
+}
+
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  padding: 30px 20px;
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 9;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+header .inner-container {
+  margin: auto;
+}
+header .inner-container .row .grid {
+  display: grid;
+  grid-template-columns: 15% auto 20%;
+}
+header .inner-container .row .grid .item {
+  position: relative;
+}
+header .inner-container .row .grid .item.brand img {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 34px;
+  z-index: 1;
+}
+header .inner-container .row .grid .item.menu nav {
+  height: 100%;
+  padding: 0 20px;
+}
+header .inner-container .row .grid .item.menu nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+header .inner-container .row .grid .item.menu nav ul li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 25px;
+}
+header .inner-container .row .grid .item.menu nav ul li:hover {
+  color: #FFF;
+}
+header .inner-container .row .grid .item.menu nav ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+header .inner-container .row .grid .item.menu nav ul li a:hover {
+  color: #FFF;
+}
+header .inner-container .row .grid .item.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .inner-container .row .grid .item.action img {
+  width: 44px;
+  height: 42px;
+}
+header .inner-container .row .grid .item.action .label {
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+header .inner-container .row .grid .item.action .label span {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+header .inner-container .row .grid .item.action .label a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  letter-spacing: 0.03em;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+.banner-section {
+  overflow: hidden;
+  position: relative;
+}
+.banner-section .banner {
+  position: relative;
+  background: url("../images/banner.webp") no-repeat center center/cover;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  filter: grayscale(100%);
+}
+.banner-section .banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222429;
+  opacity: 0.8;
+  z-index: 1;
+}
+.banner-section .banner::after {
+  content: "";
+  background: url(../images/slide-2-pattern-1.webp) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.banner-section .banner .container {
+  margin: auto;
+}
+.banner-section .banner .container .row .grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  z-index: 9;
+  position: relative;
+  align-items: center;
+  height: 700px;
+}
+.banner-section .banner .container .row .grid .item .inner-content {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  width: 100%;
+}
+.banner-section .banner .container .row .grid .item .inner-content .subheading {
+  display: block;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+.banner-section .banner .container .row .grid .item .inner-content .heading h1 {
+  font-size: 6rem;
+  color: #ffffff;
+  line-height: 5.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.banner-section .banner .container .row .grid .item .overlay-logo {
+  max-width: 100%;
+  height: 100%;
+}
+.banner-section .animations {
+  z-index: 999;
+}
+.banner-section .animations .left-animation {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.banner-section .animations .right-animation {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.counter {
+  padding: 0px 20px;
+  background: #222429;
+}
+.counter .container {
+  max-width: 1024px;
+  margin: auto;
+}
+.counter .container .row .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+@media screen and (max-width: 768px) {
+  .counter .container .row .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.counter .container .row .grid .item {
+  position: relative;
+  display: grid;
+  width: -webkit-fill-available;
+  justify-items: center;
+  padding: 100px 0px;
+  border-top: 5px solid transparent;
+}
+.counter .container .row .grid .item:hover {
+  border-top: 5px solid #ffaa17;
+}
+.counter .container .row .grid .item::after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 0;
+  bottom: 7px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.counter .container .row .grid .item:nth-last-child(1)::after {
+  display: none;
+}
+.counter .container .row .grid .item .total {
+  color: #ffffff;
+  position: relative;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1em;
+  letter-spacing: 0px;
+  display: block;
+}
+.counter .container .row .grid .item .label {
+  color: #ffffff;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html * {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inner-container {
+  position: relative;
+  display: block;
+  padding: 0px 60px;
+}
+
+.relative {
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */
